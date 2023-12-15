@@ -1,0 +1,444 @@
+
+*{
+    box-sizing: border-box;
+  
+}
+
+body{
+    background-color: black;
+    height:100vh;
+    overflow-y: scroll;
+}
+.Welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    top:40%;
+    left:34%;
+    color:red;
+    font-size: 4rem;
+    
+}
+
+.Welcome p{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.all_landing{
+    height:100vh;
+    width:200vh;
+    background-color: black;
+    background-image: url("kurosawa.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fallingdownintro{
+    
+    animation: homepagetoptobottom 0.7s ease-in;
+}
+
+
+#login{
+    border-radius: 12px;
+    padding:20px;
+    position: relative;
+    left:20%;
+    width:50%;
+    background-color: green;
+    color: white ;
+    border: none;
+    box-shadow: white 0.5px 0.5px;
+}
+
+#login.animation-ended:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+    background-color: red !important;
+    color: white !important;
+}
+#left_intropageimg{
+    position: fixed;
+    left:-10%;
+    top:0%;
+    height: 100%;
+    width:20%;
+}
+
+#right_intropageimg{
+    position: fixed;
+    right:-10%;
+    top:0%;
+    height: 100%;
+    width:20%;
+}
+
+.Login_placeholder{
+    position: fixed;
+    top:40%;
+    left:30%;
+    border: 1px solid white;
+    padding:100px;
+    background-color: white;
+    height:40%;
+    width:40%;
+    border-radius: 12px;
+}
+
+.Login_placeholder form{
+    position: absolute;
+    top:20%;
+    left:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.form_input_stringboxes{
+    border-radius: 10px;
+    padding:15px;
+    background-color: black;
+    color:white;
+}
+
+
+.form_input_stringboxes:hover{
+    transform:scale(1.15);
+
+}
+
+#submit_signup{
+    border-radius: 12px;
+    padding: 10px;
+    width:100%;
+    background-color: green;
+    color: white ;
+    border: none;
+    box-shadow: white 0.5px 0.5px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px)  {
+    .Login_placeholder{
+        position: fixed;
+        top:10%;
+        left:5%;
+        height:70%;
+        width:90vw;
+    }
+    .Login_placeholder form{
+        position: absolute;
+        top:30%;
+        left:20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    .Welcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed;
+        top:40%;
+        left:30%;
+        color:white;
+        font-size:2rem;
+    }
+
+.all_landing{
+    height:20vh;
+    width:50vh;
+    background-color: black;
+    background-image: url("kurosawa.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.PostAReview{
+    width: 30%!important;
+    margin-left: 0px;
+    margin-right: 800px;
+}
+#Whatup{
+    position: fixed;
+    top:60% !important;
+    left:40% !important;
+    text-align: center;
+    color:white;
+    font-family: 'Courier New', Courier, monospace
+
+}
+
+}
+
+.login{
+    position: absolute;
+    top:70%;
+    left:30%;
+}
+
+.submit{
+    border-radius: 12px ;
+    padding: 10px;
+    width:100%;
+    background-color: green;
+    color: white ;
+    border: none;
+    box-shadow: white 0.5px 0.5px;
+
+}
+
+.submit:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+    background-color: red !important;
+    color:white !important;
+}
+
+
+@keyframes homepagetoptobottom {
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.RollingImages{
+    background-image: url("image1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100vw;
+    height:60vh;
+    border-bottom: 1px solid white ;
+    z-index: 1;
+   
+}
+
+
+
+.ButtonsNStuff{
+    position: fixed;
+    top:55%;
+    left:40%;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+
+}
+
+.ButtonsNStuff button{
+    border-radius: 100px;
+    height:15px;
+    width:15px;
+
+}
+
+#Whatup{
+    position: fixed;
+    top:60%;
+    left:30%;
+    text-align: center;
+    color:white;
+    font-family: 'Courier New', Courier, monospace
+
+}
+
+.options{
+    position: fixed;
+    top:70%;
+    left:10%;
+    display: flex;
+    flex-direction: row;
+    gap:400px;
+    width: 100%;
+    height:60%;
+ 
+}
+
+.PostAReview{
+    background-color: green;
+    box-shadow:white 1px 1px ;
+    width:30%;
+    height:50%;
+    border:1px solid white;
+    padding:30px;
+    border-radius: 12px;
+
+}
+
+.PostAReview:hover{
+    opacity: 0.7;
+
+}
+.READ_MOST_POPULAR{
+    background-color: red;
+    box-shadow:white 1px 1px ;
+    width:30%;
+    height:50%;
+    border:1px solid white;
+    padding:30px;
+    border-radius: 12px;
+
+}
+
+.READ_MOST_POPULAR:hover{
+    opacity: 0.7;
+
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color:blue;
+}
+
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    gap:0px;
+    position: fixed;
+    top:60%;
+    left:10%;
+}
+
+#MovieName{
+    position: fixed;
+    top:10%;
+    left:30%;
+    width:30%;
+    padding:20px;
+    border-radius: 12px;
+}
+
+#PostRevBox{
+    position:fixed;
+    top:20%;
+    left:30%;
+    width:50%;
+    height:40vh;
+    border-radius: 12px;
+}
+
+.stars img{
+    margin-left:none;
+    border-left:none;
+    width:18%;
+}
+
+.everything_postreviews{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+#submitbutton{
+    position:fixed;
+    top:90%;
+    left:70%;
+    padding:10px;
+    background-color: green;
+    border-radius: 12px;
+    border:none;
+    color:white;
+}
+
+#submitbutton:hover{
+    transform: scale(1.15);
+    opacity: 0.8;
+    background-color: red !important;
+    color:white !important;
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    position: fixed;
+    background-color: royalblue;;
+    padding:40px;
+    border-radius: 12px;
+    top:1%;
+    left:0%;
+    z-index: 2;
+}
+
+#AllthingsNavBar{
+    display: none;
+
+}
+
+.navbar a{
+    color:white;
+    font-weight: bolder;
+}
+#navimg{
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 10px;
+    position: fixed;
+
+    top:0%;
+    left:0%;
+    width:4%;
+    height:6%;
+    z-index: 2;
+}
+#mynavbarimg{
+   width:100%;
+}
+
+#intro_readreviews{
+    color:white;
+    position: fixed;
+    top:5%;
+    left:5%;
+    font-size: 1.5rem;
+}
+
+#profile_pic_holder{
+    z-index: 2;
+    position:fixed;
+    top:1%;
+    left:95%;
+}
+
+#profile_pic_holder img{
+
+    width:80%;
+    border-radius: 12px;
+}
+
+
+#profile_details{
+    display: none;
+    flex-direction: column;
+    padding:20px;
+    gap:40px;
+    background-color:brown;
+    color:white;
+    font-weight: bolder;
+    font-size: 1rem;
+    z-index: 2;
+    position:fixed;
+    top:1%;
+    left:90%;
+    
+    border-radius: 12px;
+}
